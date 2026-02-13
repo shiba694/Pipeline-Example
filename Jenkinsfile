@@ -15,15 +15,14 @@ pipeline{
                 bat 'java Test'
             }
         }
+    }
 
-        post{
-            success{
-                bat 'echo "Build Success"'
-            }
-            failure{
-                 bat 'echo "Build Failure"'
-            }
-
-        }
+    post{
+         success{
+             bat 'echo "Build Success"'
+         }
+         failure{
+              bat 'echo "Build Failure"'
+         }
     }
 }
